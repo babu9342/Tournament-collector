@@ -1,0 +1,142 @@
+.dashboard-page {
+  min-height: 100vh;
+  background-color: #0d0f14;
+  color: #f3f4f6;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  padding-bottom: 5rem;
+}
+
+.dashboard-content {
+  max-width: 1200px;
+  margin: 3rem auto 0 auto;
+  padding: 0 5%;
+}
+
+/* ===== Stats ===== */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-bottom: 3.5rem;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  padding: 1.8rem;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+.stat-card p {
+  color: #9ca3af;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-card h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stat-card h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* ===== Events ===== */
+.events-section {
+  margin-bottom: 3.5rem;
+}
+
+.events-section h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  border-left: 4px solid #3b82f6;
+  padding-left: 0.75rem;
+}
+
+.no-events-text {
+  color: #9ca3af;
+  font-style: italic;
+}
+
+.events-grid-custom {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.event-card-custom {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.event-card-custom:hover {
+  border-color: rgba(59, 130, 246, 0.3);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.card-top h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.status-badge {
+  padding: 0.25rem 0.6rem;
+  font-size: 0.7rem;
+  font-weight: 800;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.status-badge.open {
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  color: #10b981;
+}
+
+.status-badge.closed {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #ef4444;
+}
+
+.card-details p {
+  margin: 0.4rem 0;
+  font-size: 0.9rem;
+  color: #d1d5db;
+}
+
+.card-details strong {
+  color: #9ca3af;
+  font-weight: 600;
+}

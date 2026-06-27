@@ -1,0 +1,141 @@
+.registrations-page {
+  min-height: 100vh;
+  background-color: #0d0f14;
+  color: #f3f4f6;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  padding-bottom: 5rem;
+}
+
+.registrations-container {
+  max-width: 1000px;
+  margin: 3rem auto 0 auto;
+  padding: 2.5rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.registrations-container h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #fff, #9ca3af);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.registrations-container p {
+  color: #9ca3af;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.select-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.select-container label {
+  font-weight: 600;
+  color: #d1d5db;
+}
+
+.tournament-select {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tournament-select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.2);
+}
+
+.tournament-select option {
+  background: #12161f;
+  color: #fff;
+}
+
+.tournament-summary {
+  background: rgba(59, 130, 246, 0.05);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.tournament-summary h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  color: #fff;
+}
+
+.tournament-summary p {
+  margin: 0;
+  color: #d1d5db;
+  font-size: 0.9rem;
+}
+
+.loader, .no-registrations {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #9ca3af;
+  margin: 3rem 0;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.registrations-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.registrations-table th,
+.registrations-table td {
+  padding: 1rem 1.2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: 0.95rem;
+}
+
+.registrations-table th {
+  font-weight: 700;
+  color: #9ca3af;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+}
+
+.registrations-table td {
+  color: #d1d5db;
+}
+
+.registrations-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.registrations-table .team-name {
+  font-weight: 700;
+  color: #3b82f6;
+}
+
+.registrations-table .players-list {
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
